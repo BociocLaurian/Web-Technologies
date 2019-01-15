@@ -235,13 +235,11 @@ function startGame() {
              level = 1;
              life = 6;
              player.speedX = 2;
-             color ="rgb(0, 0, 0)";
          }
          
          if(life > 0){
              
              life -= 1 ;
-             color ="rgb(0, 0, 0)";
          }
          
          player.x = 10; 
