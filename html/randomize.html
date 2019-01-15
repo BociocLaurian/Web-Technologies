@@ -4,49 +4,164 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 
- 
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
-   
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+	
+  
 	<title>Movie Spotlight</title>
 </head>
 
 <body>
-		<div id="site-content">
-				<header class="site-header">
-					<div class="container">
-						<a href="../main.html" id="branding">
-							<img src="../Images/logo.png" alt="" class="logo", id="logoBreathing">
-							<div class="logo-copy">
-								<h1 class="site-title">Movie Spotlight</h1>
-							  
-							</div>
-						</a> 
-						<div class="main-navigation">
+		<header class="site-header">
+				<div class="container">
+						<div  id="branding">				
+							<img src="../Images/logo.png" alt="logo-picture" class="logo"  id="logoBreathing">			  	
+								<a href="../index.html">					
+									<div class="logo-copy">
+										<h1 class="site-title">Movie Spotlight</h1>							  
+									</div>
+								</a>	
+						</div> 
+						<nav class="main-navigation">
 							
 							<ul class="menu">
-								<li class="menu-item"><a href="../main.html">Home</a></li>
+								<li class="menu-item"><a href="../index.html">Home</a></li>
 								<li class="menu-item"><a href="../html/news.html">News</a></li>
 								<li class="menu-item"><a href="../html/reviews.html">Movie reviews</a></li>
-								<li class="menu-item current-menu-item"><a href="../html/randomize.html">Randomizer</a></li>
+								<li class="menu-item current-menu-item"><a href="../html/randomize.html">Movies On Spot</a></li>
 								<li class="menu-item"><a href="../html/about.html">About us</a></li>
 								<li class="menu-item"><a href="../html/contact.html">Contact</a></li>
 							</ul> 
-
-							<div class="mobile-navigation"></div>
-						</div>
+						</nav>
 					</header>
 					<main class="main-content">
 						<div class="container">
 							<div class="page">
 								<div class="linktree">
-									<a href="../main.html">Home</a>
-									<span class="span-costum">Randomizer</span>
+									<a href="../index.html">Home</a>
+									<span class="span-costum">Movies On Spot</span>
 								</div>
-                                
+                                <h1 class="text4">If you don't know what to watch let us HELP YOU with a suggestion !</h1>
+								<hr>
+								<h5 class="text5">Just mouse over on your favourite category of movies and it will pick a random movie for you !</h5> 
+								<div class="con">
+                                    <div class="row">
+									   <div class="col-md-4">
+										  <div class="card1" >
+											<div class="front" onmouseover="movie1()" >
+												<img class="im" src="https://i.imgur.com/cNEZakI.png">
+												<p class="t">ACTION</p>
+											</div>
+											<div class="back" >
+												<p id="action1" class="m"></p>
+												
+											</div>
+										  </div>
+										</div>
+										<div class="col-md-4">
+										  <div class="card2">
+											 <div class="front" onmouseover="movie2()" >
+												<img class="im"  src="https://i.imgur.com/6Wg2zY0.png">
+												<p class="t">ANIMATED</p>
+											 </div>
+											 <div class="back" >
+													<p id="animated1" class="m"></p>
+													
+											 </div>
+											</div>
+										</div>
+										<div class="col-md-4">
+										  <div class="card3">
+											 <div class="front" onmouseover="movie3()" >
+												<img class="im"  src="https://i.imgur.com/kIcf83y.png">
+												<p class="t">BIOPIC</p>
+											 </div>
+											 <div class="back" >
+												<p id="bio1" class="m"></p>
+											
+											 </div>
+										  </div>
+										</div>
+									</div>
+									<div class="row">
+									   <div class="col-md-4">
+										  <div class="card4">
+											 <div class="front" onmouseover="movie4()" >
+												<img class="im"  src="https://i.imgur.com/orfYuwH.png">
+												<p class="t">COMEDY</p>
+											 </div>
+											 <div class="back" >
+												<p id="comedy1" class="m"></p>
+												
+											 </div>
+										  </div>
+										</div>
+										<div class="col-md-4">
+										  <div class="card5">
+											 <div class="front" onmouseover="movie5()" >
+												<img class="im"  src="https://i.imgur.com/zEJJug7.png">
+												<p class="t">CRIME</p>
+											 </div>
+											 <div class="back" >
+												<p id="crim1" class="m"></p>
+												
+											 </div>
+										  </div>
+										</div>
+										<div class="col-md-4">
+										  <div class="card6">
+											 <div class="front" onmouseover="movie6()" >
+												<img class="im" src="https://i.imgur.com/ckiQfvj.png">
+												<p class="t">HORROR</p>
+											 </div>
+											 <div class="back" >
+												<p id="horr1" class="m"></p>
+												
+											 </div>
+										  </div>
+										</div>
+									</div>
+									<div class="row">
+									<div class="col-md-2"></div>
+									   <div class="col-md-4">
+										  <div class="card7">
+											 <div class="front" onmouseover="movie7()" >
+												<img class="im"  src="https://i.imgur.com/Mp2zwp0.png">
+												<p class="t">ROMANCE</p>
+											 </div>
+											 <div class="back" >
+												<p id="rom1" class="m"></p>
+												
+											 </div>
+										   </div>
+										</div>
+										<div class="col-md-4">
+										  <div class="card8">
+											 <div class="front" onmouseover="movie8()" >
+												<img class="im"  src="https://i.imgur.com/iShugzS.png">
+												<p class="t">SCI-FI</p>
+											 </div>
+											 <div class="back" >
+												<p id="sci1" class="m"></p>
+												
+											 </div>
+										  </div>
+										</div>
+										<div class="col-md-2"></div>
+									</div>									
+								</div>
+								<hr><br>
+								
+								<div class="row">
+                                    <h5 id="h5s">Game instructions:</h5>
+									<p class="text6">Left-Click on Canvas to move your player. Try to reach the goal without being caught by the enemies.</p><br>
+									<button type="submit" class="btn" onclick="startGame()">Start Game</button>
+									<canvas id="mycanvas"  width="640" height="360" ></canvas><br><br><hr>
+
+								</div>
 
 							</div>
 						</div>
-								 						
+													
 					</main>  
 					
 		<footer class="site-footer">
@@ -54,15 +169,15 @@
 	 	      <div class="row">
 				<div class="col-md-4">
 				    <p class="footer-left">
-						<a href="#">Home</a>
+						<a href="../index.html">Home</a>
 						<b> · </b>
-						<a href="#">News</a>
+						<a href="../html/news.html">News</a>
 						<b> · </b>
-						<a href="#">Movie reviews</a>
+						<a href="../html/reviews.html">Movie reviews</a>
 						<b> · </b>
-						<a href="#">About us</a>						
+						<a href="../html/about.html">About us</a>						
 						<b> · </b>
-						<a href="#">Contact</a>
+						<a href="../html/contact.html">Contact</a>
 					</p>
 				</div>
 
@@ -93,7 +208,8 @@
 			  </div>
 		   </div>
 	    </footer>	
+		
+		<script src="../js/custom.js"></script>
 
-
- </body>
+    </body>
 </html>
